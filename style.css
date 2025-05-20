@@ -1,0 +1,76 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    background-color: #fffafa;
+    padding: 100px;
+    border-radius: 100px;
+    border-color: #000000;
+    box-shadow: 0 4 10px rgba(0,0, 0, 0.1);
+    text-align: center;
+    width: 600px;
+}
+h1{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.roles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+.role{
+    background-color: aquamarine;
+    
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 12px;
+    align-items: center;
+    gap: 2px;
+    width: 100px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+.role img{
+   width: 100%;
+   height: auto;
+
+}
+.role p{
+    margin-top: 10px;
+    font-size: 14px;
+    
+
+}
+.role.selected{
+    border-color:#666
+}
+.next-button{
+    background-color: rgb(2, 10, 7);
+    color:#fff;
+    border: none;
+    padding:10px 20px;
+    border-radius: 5px;
+    cursor:pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+
+}
+.next-button:hover{
+    background-color: rgb(133, 81, 14);
+}
